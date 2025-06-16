@@ -22,9 +22,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.evolvedbinary.thirdparty.org.apache.xmlrpc</groupId>
+    <groupId>be.ikan</groupId>
     <artifactId>xmlrpc</artifactId>
-    <version>4.0.0</version>
+    <version>4.0.1</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <properties>
@@ -43,7 +43,7 @@
       <xmlrpc.osgi.export>${xmlrpc.osgi.export.pkg};${xmlrpc.osgi.version}</xmlrpc.osgi.export>
       <xmlrpc.osgi.import>${xmlrpc.osgi.import.pkg}</xmlrpc.osgi.import>
       <xmlrpc.osgi.dynamic />
-      <xmlrpc.osgi.private.pkg>!*</xmlrpc.osgi.private.pkg>
+      <xmlrpc.osgi.private.pkg></xmlrpc.osgi.private.pkg>
       <xmlrpc.osgi.failok>false</xmlrpc.osgi.failok>
       <xmlrpc.osgi.import.default.version>[$(version;==;$(@)),$(version;+;$(@)))</xmlrpc.osgi.import.default.version>
       <xmlrpc.osgi.exclude.dependencies>false</xmlrpc.osgi.exclude.dependencies>
@@ -51,12 +51,6 @@
   <artifactId>xmlrpc-common</artifactId>
   <packaging>bundle</packaging>
   <name>Apache XML-RPC Common Library</name>
-  <scm>
-      <connection>scm:git:https://github.com/evolvedbinary/apache-xmlrpc.git</connection>
-      <developerConnection>scm:git:https://github.com/evolvedbinary/apache-xmlrpc.git</developerConnection>
-      <url>scm:git:https://github.com/evolvedbinary/apache-xmlrpc.git</url>
-    <tag>xmlrpc-4.0.0</tag>
-  </scm>
   <build>
     <plugins>
       <plugin>
@@ -88,15 +82,15 @@
       </plugin>
     </plugins>
   </build>
+  
   <dependencies>
-    <dependency>
-      <groupId>org.apache.ws.commons.util</groupId>
-      <artifactId>ws-commons-util</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>jaxme</groupId>
-      <artifactId>jaxmeapi</artifactId>
-      <scope>provided</scope>
-    </dependency>
-  </dependencies>
+      <dependency>
+        <groupId>org.apache.ws.commons.util</groupId>
+        <artifactId>ws-commons-util</artifactId>
+      </dependency>
+      <dependency>
+        <groupId>jakarta.xml.bind</groupId>
+        <artifactId>jakarta.xml.bind-api</artifactId>
+      </dependency>
+    </dependencies>
 </project>

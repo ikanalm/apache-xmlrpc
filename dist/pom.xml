@@ -23,20 +23,14 @@
   <modelVersion>4.0.0</modelVersion>
   <description>Assembly project for building the XML-RPC distribution.</description>
   <parent>
-    <groupId>com.evolvedbinary.thirdparty.org.apache.xmlrpc</groupId>
+    <groupId>be.ikan</groupId>
     <artifactId>xmlrpc</artifactId>
-    <version>4.0.0</version>
+    <version>4.0.1</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>xmlrpc-dist</artifactId>
   <packaging>pom</packaging>
   <name>Apache XML-RPC Distribution</name>
-  <scm>
-    <connection>scm:git:https://github.com/evolvedbinary/apache-xmlrpc.git</connection>
-    <developerConnection>scm:git:https://github.com/evolvedbinary/apache-xmlrpc.git</developerConnection>
-    <url>scm:git:https://github.com/evolvedbinary/apache-xmlrpc.git</url>
-    <tag>xmlrpc-4.0.0</tag>
-  </scm>
   <build>
     <plugins>
       <plugin>
@@ -68,14 +62,14 @@
       <artifactId>javax.servlet-api</artifactId>
     </dependency>
     <dependency>
-    	<groupId>com.evolvedbinary.thirdparty.org.apache.xmlrpc</groupId>
+    	<groupId>be.ikan</groupId>
     	<artifactId>xmlrpc-client</artifactId>
-    	<version>4.0.0</version>
+    	<version>4.0.1</version>
     </dependency>
     <dependency>
-    	<groupId>com.evolvedbinary.thirdparty.org.apache.xmlrpc</groupId>
+    	<groupId>be.ikan</groupId>
     	<artifactId>xmlrpc-server</artifactId>
-    	<version>4.0.0</version>
+    	<version>4.0.1</version>
     </dependency>
   </dependencies>
 
