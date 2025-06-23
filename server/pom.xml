@@ -38,9 +38,11 @@
           org.apache.xmlrpc.webserver.*
       </xmlrpc.osgi.export.pkg>
       <xmlrpc.osgi.import.pkg>
-          !org.apache.xmlrpc.*,
+		  !org.apache.xmlrpc.metadata,
+    	  !org.apache.xmlrpc.server,
+          !org.apache.xmlrpc.webserver,
           !javax.xml.*,
-          !org.w3c.dom,
+          org.w3c.dom,
           *
       </xmlrpc.osgi.import.pkg>
       <xmlrpc.osgi.symbolic.name>${project.groupId}.${project.artifactId}</xmlrpc.osgi.symbolic.name>

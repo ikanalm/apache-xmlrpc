@@ -36,7 +36,7 @@
           org.apache.xmlrpc.client.*
       </xmlrpc.osgi.export.pkg>
       <xmlrpc.osgi.import.pkg>
-          !org.apache.xmlrpc.*,
+		  !org.apache.xmlrpc.client.*,
           !javax.xml.*,
           !org.w3c.dom,
           *

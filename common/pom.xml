@@ -34,8 +34,8 @@
       </xmlrpc.osgi.export.pkg>
       <xmlrpc.osgi.import.pkg>
           !org.apache.xmlrpc.*,
-          !javax.xml.*,
-          !org.w3c.dom,
+          javax.xml.parsers,
+          org.w3c.dom,
           *
       </xmlrpc.osgi.import.pkg>
       <xmlrpc.osgi.symbolic.name>${project.groupId}.${project.artifactId}</xmlrpc.osgi.symbolic.name>
